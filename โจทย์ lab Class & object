@@ -1,0 +1,38 @@
+Lab 1 Class and Object
+1.เขียน class diagram ของ class ชื่อ Book โดย class Book 
+ 1.1 ควรมี attributes หรือ instance variables คือ title numberOfPage 
+ 1.2 ควรมี accessor methods  (getter) และ มี mutator methods (setter)
+1.3 มี constructor 3 แบบ คือ 
+default constructor(ไม่มี parameter)
+constructor เพื่อกำหนดค่าเริ่มต้นของ title
+constructor เพื่อกำหนดค่าเริ่มต้นของ  title และ numberOfPage
+2.เขียนโปรแกรมเพื่อทดสอบ class Book โดย โปรแกรม มีการทำงานดังนี้ (เขียน Flowchart และ Object Diagram )
+	1.สร้างตัวแปรไว้อ้างอิงไปยัง book object ชื่อ mybook1
+2. mybook1 อ้างอิงไปที่ Book object ที่สร้าง แบบไม่กำหนดค่าเริ่มต้น
+3.สร้างตัวแปรไว้อ้างอิงไปยัง book object ชื่อ mybook2
+	4.mybook2 อ้างอิงไปที่ Book object ที่สร้าง แบบกำหนด title = “Java Programming”
+5.สร้างตัวแปรไว้อ้างอิงไปยัง book object ชื่อ mybook3
+6.mybook3 อ้างอิงไปที่ Book object ที่สร้างแบบกำหนด title = “C Programming” และ numberOfpage=500
+7.myBook1 เรียก method ของ class Book เพื่อกำหนด title ของตัวเอง เป็น “OOP”
+8.myBook1 เรียก method ของ class Book เพื่อกำหนด numberOfPage ของตัวเอง เป็น 1000
+9.myBook2 เรียก method ของ class Book เพื่อเปลี่ยน title = ”Network” และเรียก method เพื่อกำหนดค่า numOfPage=600
+10.แสดงค่าของ Object ( System.out.println() )
+3.ปรับปรุง class Book โดยเพิ่ม attribute  authorName และให้เพิ่ม method ตามความเหมาะสม (ปรับที่ class diagram ก่อน) เขียนโปรแกรมทดสอบ
+4.ให้สร้าง method เพื่อเปรียบเทียบหนังสือว่าเป็นเล่มเดียวกันหรือไม่ ( title numOfPage authorName เหมือนกัน)
+5.ให้ใช้ program drjava  ทำการ debug program 	โดยการ ทำ single step แล้วเขียนลำดับการ exec มาในรายงาน 
+
+Resource:
+https://www.javaworld.com/article/2979739/learn-java/java-101-classes-and-objects-in-java.html
+https://docs.oracle.com/javase/tutorial/
+https://docs.oracle.com/javase/7/docs/api/
+https://docs.oracle.com/javase/7/docs/
+
+	
+
+	
+รายงาน
+1.Class diagram  
+2.Object diagram
+3.Flowchart
+4.ผลจากการ debug program (ลำดับเลขบรรทัด ที่โปรแกรม execute)
+5.source code
