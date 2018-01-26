@@ -2,7 +2,8 @@ public class Book {
 	
 	// attribute
 	private String title;
-	private int numberOfpage;
+	private int numberOfPage;
+	private String authorName;
 
 	// constructor method 1 
 	public Book(){
@@ -15,9 +16,16 @@ public class Book {
 	}
 
 	// constructor method 3
-	public Book(String title, int numberOfpage){
+	public Book(String title, int numberOfPage){
 		this.title = title;
-		this.numberOfpage = numberOfpage;
+		this.numberOfPage = numberOfPage;
+	}
+
+	// constructor method 4
+	public Book(String title, int numberOfPage, String authorName){
+		this.title = title;
+		this.numberOfPage = numberOfPage;
+		this.authorName = authorName;
 	}
 
 	// getter method to get title
@@ -26,8 +34,13 @@ public class Book {
 	}
 
 	// getter method to get number of page
-	public int getnumberOfpage(){
-		return numberOfpage;
+	public int getnumberOfPage(){
+		return numberOfPage;
+	}
+
+	// getter method to get author name
+	public String getauthorName(){
+		return authorName;
 	}
 
 	// setter method to set title form book pointed
@@ -36,14 +49,29 @@ public class Book {
 	}
 
 	// setter method to set number of page form book pointed
-	public void setnumberOfpage(int numberOfpage){
-		this.numberOfpage = numberOfpage;
+	public void setnumberOfPage(int numberOfPage){
+		this.numberOfPage = numberOfPage;
+	}
+
+	// setter method to set author name form book pointed
+	public void setauthorName(String authorName){
+		this.authorName = authorName;
 	}
 
 	// method show detail
 	public void showDetails() {
 		System.out.println(title);
-		System.out.println(numberOfpage);
+		System.out.println(numberOfPage);
+	}
+
+	// method same book
+	public boolean sameBook(String title, int numberOfPage, String authorName){
+		if (this.title == title && this.numberOfPage == numberOfPage && this.authorName == authorName) {
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
 
 	// ------- more infomation -------- //
