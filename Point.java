@@ -1,9 +1,9 @@
 public class Point {
 
 	// attribute
-	private int x;
-	private int y;
-	private int z;
+	private float x;
+	private float y;
+	private float z;
 
 	// constructor method 1
 	public Point(){
@@ -11,51 +11,51 @@ public class Point {
 	}
 
 	// constructor method 2
-	public Point(int x){
+	public Point(float x){
 		this.x = x;
 	}
 
 
 	// constructor method 3
-	public Point(int x, int y){
+	public Point(float x, float y){
 		this.x = x;
 		this.y = y;
 	}
 
 	// constructor method 4
-	public Point(int x, int y, int z){
+	public Point(float x, float y, float z){
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
 	// getter method to get x
-	public int getX(){
+	public float getX(){
 		return x;
 	}
 
 	// getter method to get y
-	public int getY(){
+	public float getY(){
 		return y;
 	}
 
 	// getter method to get z
-	public int getZ(){
+	public float getZ(){
 		return z;
 	}
 
 	// setter method to set x
-	public void setX(int x){
+	public void setX(float x){
 		this.x = x;
 	}
 
 	// setter method to set y
-	public void setY(int y){
+	public void setY(float y){
 		this.y = y;
 	}
 
 	// setter method to set z
-	public void setZ(int z){
+	public void setZ(float z){
 		this.z = z;
 	}
 
@@ -68,7 +68,7 @@ public class Point {
 	}
 
 	// method move with x y z
-	public void moveWithValue(int x, int y, int z){
+	public void moveWithValue(float x, float y, float z){
 		this.x = x;
 		this.y = y;
 		this.z = z;
