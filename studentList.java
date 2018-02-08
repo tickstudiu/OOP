@@ -49,7 +49,7 @@ public class studentList {
     }
 
     // method get number of student
-    public String getNumberOfStudent(){
-    	return "numberOfstudent";
+    public int getNumberOfStudent(){
+    	return this.studentList.size();
     }
 }
