@@ -9,13 +9,13 @@ public class Bicycle implements Vehicle{
 	} 
 
 	public void changeGear(int a){
-		gear = gear + a;
+		gear = a;
 	}
     public void speedUp(int a){
     	speed = speed + a;
     }
     public void applyBrakes(int a){
-    	speed = 0;
+    	speed = speed - a;
     }
 
     public String toString(){
